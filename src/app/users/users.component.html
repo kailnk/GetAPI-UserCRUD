@@ -1,0 +1,19 @@
+<button (click)="onDisplayForm()" class="btnAdd" type="button">Add</button>
+<div class="listUsers">
+  <div class="userItem" *ngFor="let user of usersFromAPI">
+    <span class="userId">{{ user.id }}</span>
+    <span class="userEmail">{{ user.email }}</span>
+    <span class="userFirstName">{{ user.first_name }}</span>
+    <span class="userLastName">{{ user.last_name }}</span>
+    <img src="{{ user.avatar }}" alt="user-avatar">
+    <div class="action">
+      <button class="btnEdit" type="button">Edit</button>
+      <button (click)="deleteUser(user.id)" class="btnDelete" type="button">Del</button>
+    </div>
+  </div>
+  <p [style]="messageStyle" class="message">{{ message }}</p>
+</div>
+
+<app-users-form></app-users-form>
+
+

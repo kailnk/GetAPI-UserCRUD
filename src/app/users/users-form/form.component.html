@@ -1,0 +1,17 @@
+<div id="overlay" class="overlay"></div>
+
+<div id="userForm__root">
+  <form id="userForm" class="userForm">
+    <!--    <input formControlName="id" id="userId" name="userId" type="text" hidden>-->
+    <label for="userEmail">Email:</label>
+    <input id="userEmail" name="userEmail" type="email">
+    <label for="userFirstName">First Name:</label>
+    <input id="userFirstName" name="userFirstName" type="text">
+    <label for="userLastName">Last Name:</label>
+    <input id="userLastName" name="userLastName" type="text">
+    <!--    <label for="userAvatar">Avatar:</label>-->
+    <!--    <input formControlName="avatar" id="userAvatar" name="userAvatar" type="file">-->
+    <input id="btnCreate" value="Create" type="submit">
+    <button (click)="onCloseForm()" id="btnCancel" type="button">Cancel</button>
+  </form>
+</div>

@@ -1,0 +1,36 @@
+#overlay {
+  background-color: #333;
+  opacity: .6;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+#userForm__root {
+  border: 1px solid #333333;
+  width: 500px;
+  border-radius: 20px;
+  display: none;
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  margin-left: -250px;
+  background-color: aliceblue;
+}
+
+#userForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: fit-content;
+  padding: 30px;
+  font-size: 18px;
+}
+
+input {
+  padding: 10px 20px;
+  font-size: 18px;
+}

@@ -1,0 +1,85 @@
+.listUsers {
+  /*background-color: aqua;*/
+  width: 1200px;
+  height: fit-content;
+  margin: 120px auto;
+  border-radius: 15px;
+  transition: .3s linear;
+}
+
+.userItem {
+  margin-bottom: 20px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.userItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  cursor: pointer;
+}
+
+.userItem img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  cursor: pointer;
+}
+
+.action > button:first-child {
+  /*padding: 10px 20px;*/
+  margin-right: 20px;
+}
+
+.btnAdd {
+  position: fixed;
+  top: 30px;
+  right: 60px;
+  background-color: forestgreen;
+  color: #fff;
+}
+
+.btnEdit {
+  background-color: darkorange;
+}
+
+.btnDelete {
+  background-color: #ff3232;
+  color: #fff;
+}
+
+.userId {
+  margin-left: 40px;
+}
+
+.action {
+  margin-right: 40px;
+}
+
+.message {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
